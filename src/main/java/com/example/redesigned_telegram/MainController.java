@@ -1,0 +1,13 @@
+package com.example.redesigned_telegram;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MainController {
+
+    @GetMapping("/")
+    public String getHome(){
+        return "Welcome home";
+    }
+}
